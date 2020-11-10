@@ -15,9 +15,9 @@ python3 bert/run_squad.py \
   --bert_config_file=../bert_base_uncased/bert_config.json \
   --init_checkpoint=../bert_base_uncased/bert_model.ckpt \
   --do_train=True \
-  --train_file=../squad1/train-v1.1.json \
+  --train_file=../data/squad1/train-v1.1.json \
   --do_predict=True \
-  --predict_file=/data/question-answering/COVID-QA-dev.json \
+  --predict_file=../data/question-answering/COVID-QA-dev.json \
   --train_batch_size=16 \
   --learning_rate=3e-5 \
   --num_train_epochs=2.0 \
@@ -28,7 +28,7 @@ python3 bert/run_squad.py \
 
 Evaluate the performance of the baseline.
 ```
-python evaluate.py data/covid-qa/COVID-QA-test.json ../covid_nlp_output/predictions.json
+python3 bert/evaluate.py ../data/question-answering/COVID-QA-test.json ../covid_nlp_output/predictions.json
 ```
 Evaluation metrics.
 
@@ -45,9 +45,9 @@ python3 bert/run_squad.py \
   --bert_config_file=../bert_base_uncased/bert_config.json \
   --init_checkpoint=../bert_base_uncased/bert_model.ckpt \
   --do_train=True \
-  --train_file=/data/question-answering/squad-covid-combined-training.json \
+  --train_file=../data/question-answering/squad-covid-combined-training.json \
   --do_predict=True \
-  --predict_file=/data/question-answering/COVID-QA-dev.json \
+  --predict_file=../data/question-answering/COVID-QA-dev.json \
   --train_batch_size=16 \
   --learning_rate=3e-5 \
   --num_train_epochs=2.0 \
@@ -58,7 +58,7 @@ python3 bert/run_squad.py \
 
 Evaluate the performance of the baseline.
 ```
-python evaluate.py data/covid-qa/COVID-QA-test.json ../covid_nlp_output2/predictions.json
+python3 bert/evaluate.py ../data/question-answering/COVID-QA-test.json ../covid_nlp_output2/predictions.json
 ```
 Evaluation metrics.
 
