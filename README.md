@@ -62,16 +62,16 @@ python3 bert/evaluate.py ../data/question-answering/COVID-QA-test.json ../covid_
 ```
 Evaluation metrics.
 
-Fine-tune BERT model with `squad-covid-combined-training.json`.
+Fine-tune the uncased BERT model having L-12, H-768, A-12  with `squad-covid-combined-training.json`.
 Dataset | Exact Match | F1
 ------------|------------|------------
-dev | 25.94 | 46.27
-test | 24.01 | 45.40
+dev | 31.43 | 57.33
+
 
 Fine-tune BioBERT model with `squad-covid-combined-training.json`.
 
 Dataset | Exact Match | F1
 ------------|------------|------------
 dev | 25.94 | 46.27
-test | 35.89 | 58.87
+
 
