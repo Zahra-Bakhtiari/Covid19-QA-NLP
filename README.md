@@ -34,9 +34,7 @@ Evaluation metrics.
 
 Dataset | Exact Match | F1
 ------------|------------|------------
-dev | 25.94 | 46.27
-test | 24.01 | 45.40
-
+dev 28.46 | 48.08
 
 Fine-tune the BERT model with shuffled squad and covid mixed training dataset, then test it on the COVID QA test dataset.
 ```
