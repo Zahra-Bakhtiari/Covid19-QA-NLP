@@ -70,6 +70,6 @@ Fine-tune BioBERT model with `squad-covid-combined-training.json`.
 
 Dataset | Exact Match | F1
 ------------|------------|------------
-dev | 25.94 | 46.27
+dev | 35.89 | 58.87
 
 
