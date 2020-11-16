@@ -8,7 +8,7 @@ Prerequisites:
 * Install python version 3.7 or lower. Note 3.8: version is not compatible with features in this github 
 * Install Tensor flow version 1.0. TF1.15 is recommanded.
 
-Baseline: Fine-tune the BERT model with Squad QA dataset, then test it on the COVID QA dataset.
+Baseline: uncased BERT model having L-12, H-768, A-12 with Squad QA dataset, then test it on the COVID QA dataset.
 ```
 python3 bert/run_squad.py \
   --vocab_file=../bert_base_uncased/vocab.txt \
