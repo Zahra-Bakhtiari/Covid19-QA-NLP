@@ -4,6 +4,7 @@ Prerequisites:
 
 * Download BERT Base, Uncased model to a local directory (e.g. bert_base_uncased)
 * Download SQuAD 1.0 dataset to a local directory (e.g. squad1)
+* Download BioBERT-Base v1.1 from biobert github to a local directory (e.g. biobert_base).
 * Create a new virtual envirnoment
 * Install python version 3.7 or lower. Note 3.8: version is not compatible with features in this github 
 * Install Tensor flow version 1.0. TF1.15 is recommanded.
